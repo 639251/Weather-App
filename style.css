@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,86 +8,93 @@
 body {
   background: linear-gradient(to bottom right, #74ebd5, #9face6);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
-  padding: 20px;
 }
 
+/* Main app container styled as card */
 .app-container {
-  background: white;
+  background: #ffffff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 25px;
   max-width: 400px;
-  width: 100%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
+  transition: 0.3s ease;
 }
 
 h1 {
+  font-size: 28px;
   margin-bottom: 20px;
-  font-size: 24px;
+  color: #333;
 }
 
+/* Search box styles */
 .search-box {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .search-box input {
   flex: 1;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 12px 14px;
   font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-box input:focus {
+  border-color: #2196f3;
 }
 
 .search-box button {
   padding: 12px 20px;
   background-color: #2196f3;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
 
 .search-box button:hover {
   background-color: #0b7dda;
 }
 
+/* Weather info result */
 .weather-result {
   font-size: 18px;
+  color: #444;
   line-height: 1.6;
 }
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
-.app-container {
-  flex: 1;
-}
-
+/* Fixed footer */
 .footer {
   text-align: center;
   font-size: 14px;
-  color: #444;
-  padding: 15px;
-  margin-top: 30px;
-  background-color: #ffffffaa;
-  border-top: 1px solid #ddd;
-  border-radius: 0 0 15px 15px;
+  color: #333;
+  padding: 15px 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
+
 .footer strong {
   color: #2196f3;
 }
 
+/* Mobile responsive */
 @media (max-width: 480px) {
   .search-box {
     flex-direction: column;
@@ -99,11 +106,11 @@ html, body {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  .app-container {
+    margin-top: 30px;
   }
 }
-
-
-
-
 
