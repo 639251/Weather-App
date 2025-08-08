@@ -17,12 +17,6 @@ A simple and responsive Weather App built using **HTML, CSS, and JavaScript** th
 - JavaScript (ES6+)
 - OpenWeatherMap API
 
-## 📸 Screenshots
 
-![Weather App Screenshot](screenshot.png) <!-- Add your own screenshot -->
 
-## ⚙️ How to Use
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/your-username/weather-app.git
