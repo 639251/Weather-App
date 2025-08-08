@@ -63,6 +63,20 @@ h1 {
   font-size: 18px;
   line-height: 1.6;
 }
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 15px 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 0 0 15px 15px;
+}
+
+.footer strong {
+  color: #2196f3;
+}
 
 @media (max-width: 480px) {
   .search-box {
@@ -78,18 +92,6 @@ h1 {
     font-size: 20px;
   }
 }
-.footer {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
-  padding: 15px 10px;
-  border-top: 1px solid #ddd;
-  background-color: #f9f9f9;
-  border-radius: 0 0 15px 15px;
-}
 
-.footer strong {
-  color: #2196f3;
-}
+
 
